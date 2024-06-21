@@ -45,16 +45,17 @@ Sample Output 2
 4
 18
 78.50
-import java.util.Scanner;
+import java.util.*;
 
-public class Main {
+public class Solution {
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
 
-        int a = scanner.nextInt();
-        int b = scanner.nextInt();
-        int c = scanner.nextInt();
-        float d = scanner.nextFloat();
+        int a = s.nextInt();
+        int b = s.nextInt();
+        int c = s.nextInt();
+        float d = s.nextFloat();
 
         int r1 = a * a;
         System.out.println(r1);
@@ -65,6 +66,5 @@ public class Main {
         float r3 = 3.14f * d * d;
         System.out.printf("%.2f", r3);
 
-        scanner.close();
     }
 }
